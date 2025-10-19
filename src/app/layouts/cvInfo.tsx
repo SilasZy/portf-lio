@@ -10,7 +10,6 @@ import { motion } from "framer-motion"
 import { FaRegFlag } from "react-icons/fa6";
 
 import { useState } from "react";
-import Projects from "../routes/projects/page";
 
 export const Cvinfo = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -49,24 +48,24 @@ function handleClickPhoto() {
             className="w-full sm:w-auto ps-3 rounded-none rounded-br-lg rounded-bl-lg 
                        px-6 sm:px-8 py-6 sm:py-10 bg-[#05DB45] text-black font-mono font-bold italic 
                        shadow-[3px_3px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
-                       transition text-xl sm:text-2xl"
+                       transition text-xl sm:text-sm"
             variant="secondary"
             size="lg"
             asChild
           >
-            <a href="https://github.com/silasgabriel">My Projects</a>
+            <a href="https://github.com/silasgabriel" className="font-press-start-2p text-sm">My Projects</a>
           </Button>
 
           <Button
             className="w-full sm:w-auto ps-3 rounded-none rounded-br-lg rounded-bl-lg 
                        px-6 sm:px-8 py-6 sm:py-10 bg-[#05DB45] text-black font-mono font-bold italic 
                        shadow-[3px_3px_0_#000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
-                       transition text-xl sm:text-2xl"
+                       transition text-xl sm:text-sm"
             variant="secondary"
             size="lg"
             asChild
           >
-            <a href="/CV Silas simoes.pdf" download>Download CV</a>
+            <a href="/CV Silas simoes.pdf" className="font-press-start-2p" download>Download CV</a>
           </Button>
         </div>
 
