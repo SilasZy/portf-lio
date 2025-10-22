@@ -43,6 +43,7 @@ function handleClickPhoto() {
         </div>
 
         {/* Botões principais */}
+        {/* mudar exemplo de git e colocar pra scrolar para baixo em projetos */}
         <div className="mt-6 sm:mt-3 flex flex-col md:flex-row gap-4 w-full sm:w-auto">
           <Button
             className="w-full sm:w-auto ps-3 rounded-none rounded-br-lg rounded-bl-lg 
@@ -53,7 +54,7 @@ function handleClickPhoto() {
             size="lg"
             asChild
           >
-            <a href="https://github.com/silasgabriel" className="font-press-start-2p text-sm">My Projects</a>
+            <a href="https://github.com/silasgabriel"   rel="noopener noreferrer" className="font-press-start-2p text-sm">My Projects</a>
           </Button>
 
           <Button
@@ -65,7 +66,7 @@ function handleClickPhoto() {
             size="lg"
             asChild
           >
-            <a href="/CV Silas simoes.pdf" className="font-press-start-2p" download>Download CV</a>
+            <a href="/CV Silas simoes.pdf"   rel="noopener noreferrer" className="font-press-start-2p" download>Download CV</a>
           </Button>
         </div>
 
