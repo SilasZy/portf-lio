@@ -3,10 +3,13 @@
 import { BackgroundAnimate } from "./layouts/animated/backgroundAnimate";
 import { Cvinfo } from "./layouts/cvInfo";
 
-import Projects from "./routes/projects/page";
+// Projects from "./routes/projects/page";
 import { Header } from "./layouts/header";
 import { Footer } from "./layouts/footer";
 import Skills from "./routes/skills/page";
+
+import Projects from "./routes/projects/page";
+import Education from "./routes/education/page";
 
 
 
@@ -19,6 +22,7 @@ export default function Home() {
 <BackgroundAnimate />
 <Skills />
   <Projects />
+  <Education/>
 <Footer />
    </div>
   );

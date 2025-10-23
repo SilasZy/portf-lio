@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { BackgroundAnimate } from "@/app/layouts/animated/backgroundAnimate";
 import { FaCss3, FaHtml5, FaJs, FaLaptop, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiSass, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiSass, SiTailwindcss, SiVite } from "react-icons/si";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
 
@@ -27,6 +27,8 @@ export default function Projects() {
     });
   }, []);
 
+
+
   const projects = [
     {
       title: "Busca-Cep",
@@ -43,7 +45,7 @@ export default function Projects() {
       description:
         " Aplicação web inspirada no Prime-vídeo, consumi a api do tmdb, nele consiste em mostrar os dados dos filmes do momento, Séries por gênero, filmes por gênero e muito mais!",
       image: "/flix.png",
-      techs: [<FaReact key="react" />, <SiTailwindcss key="tailwind" />],
+      techs: [<FaReact key="react" />, <SiTailwindcss key="tailwind" />, <SiVite key="Vite" />],
       aos: "fade-left",
       demo: "https://prime-flix-fus3.vercel.app/",
       git: "https://github.com/SilasZy/Prime-Flix"
@@ -71,7 +73,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen text-white relative overflow-hidden ">
+    <div id="projects" className="min-h-screen text-white relative overflow-hidden ">
       <BackgroundAnimate />
 
       {/* Título principal */}
@@ -85,7 +87,7 @@ export default function Projects() {
       </div>
 
    
-      <div className="flex flex-col items-center justify-center py-10 md:py-20 space-y-16 md:space-y-24">
+      <div className="flex flex-col items-center justify-center py-10 md:py-20 space-y-16 md:space-y-10">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -120,7 +122,7 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                <div className="flex gap-3 md:gap-4 mt-4 md:mt-6 text-xl md:text-2xl lg:text-3xl text-[#05DB45]">
+                <div className="flex gap-3 md:gap-4 mt-4 md:mt-6 text-xl md:text-2xl lg:text-3xl">
                   {project.techs.map((icon, i) => (
                  
                     <span key={i} className="drop-shadow-[0_0_4px_#05DB45] md:drop-shadow-[0_0_6px_#05DB45]">

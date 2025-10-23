@@ -42,7 +42,7 @@ function handleClickPhoto() {
           <span className="font-mono text-2xl sm:text-4xl">Desenvolvedor Full-Stack</span>
         </div>
 
-        {/* Botões principais */}
+        {/* Botões de resume// */}
         {/* mudar exemplo de git e colocar pra scrolar para baixo em projetos */}
         <div className="mt-6 sm:mt-3 flex flex-col md:flex-row gap-4 w-full sm:w-auto">
           <Button

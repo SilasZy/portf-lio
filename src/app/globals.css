@@ -13,6 +13,9 @@
   border-radius: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 @theme inline {
   --font-geist-sans: "Geist Sans", sans-serif;
