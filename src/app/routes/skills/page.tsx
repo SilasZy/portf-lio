@@ -1,13 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { link } from "fs";
-import { useState } from "react";
+import {  useState } from "react";
 import {  FaLongArrowAltDown } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
 import { FaCss3, FaFlutter, FaReact } from "react-icons/fa6";
-import { SiBootstrap, SiCss3, SiDbeaver, SiDocker, SiFirebase, SiGit, SiGithub, SiHtml5, SiInsomnia,  SiLaravel, SiMariadb, SiMysql, SiNextdotjs, SiNotion, SiPostgresql, SiRender, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
-
+import { SiBootstrap, SiDbeaver, SiDocker, SiFirebase, SiGit, SiGithub, SiHtml5, SiInsomnia,  SiLaravel, SiMariadb, SiMysql, SiNextdotjs, SiNotion, SiPostgresql, SiRender, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 export default function Skills() {
   const [clickSkillsWeb, setClickSkillsWeb] = useState(false);
   const [clickSkillsDataBase, setClickSkillsDataBase] = useState(false);
@@ -38,6 +36,9 @@ export default function Skills() {
     setClickSkillsTools(false);
     setClickSkillsWeb(false);
   };
+
+
+  
 
   const skillWeb = [
     {
@@ -90,7 +91,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="min-h-[50vh] flex items-center justify-center pt-20 flex-col text-center">
+    <div id="skills" className="min-h-[50vh] flex items-center justify-center pt-20 flex-col text-center">
       <div className="flex flex-row items-center">
         <h2 className="font-press-start-2p text-[#05DB45] text-2xl sm:text-3xl md:text-4xl mb-4 drop-shadow-[0_0_10px_#05DB45]">
           Skills
@@ -108,7 +109,7 @@ export default function Skills() {
 
 
         <Button className="font-mono hover:text-[#05DB45] text-gray-400 bg-transparent cursor-pointer  focus:outline-hidden" onClick={handleclickDataBase}>
-          <span className="font-mono ml-2">Databases</span>
+          <span className="font-mono ml-2">Banco de Dados</span>
         </Button>
 
    <Button className="font-mono hover:text-[#05DB45] text-gray-400 bg-transparent cursor-pointer  focus:outline-hidden" onClick={handleclickMobile}>
@@ -116,12 +117,12 @@ export default function Skills() {
         </Button>
 
         <Button className="font-mono hover:text-[#05DB45] text-gray-400 bg-transparent cursor-pointer  focus:outline-hidden" onClick={handleclickTools}>
-          <span className="font-mono ml-2">Tools</span>
+          <span className="font-mono ml-2">Outros</span>
         </Button>
       </div>
 
    {/* separação de skills para não me perder */}
-      <div className="mt-10 flex flex-wrap justify-center gap-8">
+      <div   className="mt-10 flex flex-wrap justify-center gap-8">
         {clickSkillsWeb &&
           skillWeb.map((skills) =>
             skills.techs.map((tech, index) => (

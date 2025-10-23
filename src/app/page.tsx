@@ -1,6 +1,6 @@
 
 
-import { BackgroundAnimate } from "./layouts/animated/backgroundAnimate";
+import  BackgroundAnimate  from "./layouts/animated/backgroundAnimate";
 import { Cvinfo } from "./layouts/cvInfo";
 
 // Projects from "./routes/projects/page";

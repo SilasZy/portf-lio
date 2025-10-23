@@ -157,7 +157,7 @@ function handleClickPhoto() {
   {/* card por trás logic img */}
   <div className="flip-card-back">
     <Image
-      src="/jokers.png"
+      src="/call_of.png"
       alt="Verso da carta"
       fill
       className="object-center"

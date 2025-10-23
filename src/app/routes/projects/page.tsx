@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { BackgroundAnimate } from "@/app/layouts/animated/backgroundAnimate";
+import  BackgroundAnimate  from "@/app/layouts/animated/backgroundAnimate";
 import { FaCss3, FaHtml5, FaJs, FaLaptop, FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiSass, SiTailwindcss, SiVite } from "react-icons/si";
 import { FaLongArrowAltDown } from "react-icons/fa";

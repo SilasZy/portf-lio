@@ -8,6 +8,7 @@ import {  FaBriefcase } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { link } from "fs";
 
 export default function Education() {
   const [showCertificates, setShowCertificates] = useState(false);
@@ -49,28 +50,54 @@ export default function Education() {
       link: "https://www.udemy.com/certificate/UC-0679a6ca-0598-4c7b-9eb0-126f75fee0f8/",
       Aos: "flip-left",
     },
+
+    {
+      title: "Tec. em análise e desenvolvimento de sistemas",
+      institution: "Escola Técnica Estadual José Humberto de Moura Cavalcanti",
+      date: "2023-2025",
+      description: "Desenvolvedor de Sistemas",
+      image: "certificadoEte.jpeg",
+      link: "https://www.escolatecnicalimoeiro.com.br/",
+      Aos: "flip-left",
+    },
+
+       {
+      title: "Informática Básica e avançada",
+      institution: "IPLC - Instituto Padre Luís Cecchin",
+      date: "2023-2024",
+      description: "Word, Excel, PowerPoint, CorelDRAW e redes de computador", 
+      image: "padreLuiz.jpg",
+      link: "https://www.iplclimoeiro.org.br/",
+      Aos: "flip-left",
+    },
     
   ];
 
   const experiences = [
     {
-      title: "Desenvolvedor Full-Stack",
-      company: "DevStudio",
-      date: "2024 - Atual",
-      description: "Atuação em projetos web com React, Next.js e APIs Node.js, além de integração com bancos SQL.",
-      image: "/assets/images/fullstack-job.png",
+      title: "Bolsista de Desenvolvimento pela FACEPE",
+      company: "FACEPE",
+      date: "2024 - 2025",
+      description: `Desenvolvimento e ciclo de vida do Software, com as linguagens: Flutter & Laravel. 
+      Com a linguagem Flutter, utilizei DIO para consumir API Laravel
+      Com Laravel, construi Apis Rest juntamente com Mysql.
+      `,
+  
+      image: "FACEPE.png",
+      link: "https://www.facepe.br/",
     },
     {
-      title: "Desenvolvedor Front-End",
-      company: "Freelancer",
-      date: "2022 - 2024",
-      description: "Criação de interfaces responsivas e intuitivas com foco em performance e SEO.",
-      image: "/assets/images/frontend-job.png",
+      title: "Estágio em Analista de Suporte Técnico",
+      company: "OnGold",
+      date: "2025 - março",
+      description: "Suporte técnico em TI, correção de bugs, testes de software, emissão de notas fiscais e atendimento ao cliente (PDV). Foco na resolução de problemas e melhoria contínua dos sistemas",
+      image: "suporte.jpg",
+      link: "https://ongoldtech.com/"
     },
   ];
 
   return (
-    <div className="min-h-[100vh] flex flex-col items-center justify-center text-center pt-20">
+    <div id="education" className="min-h-[100vh] flex flex-col items-center justify-center text-center pt-20">
       <div className="flex flex-row items-center">
         <h2 className="font-press-start-2p text-[#05DB45] text-2xl sm:text-3xl md:text-4xl mb-4 drop-shadow-[0_0_10px_#05DB45]">
           Educação
@@ -84,7 +111,7 @@ export default function Education() {
           onClick={handleCertificates}
           className="font-mono text-gray-400 bg-transparent hover:text-[#05DB45] transition-all duration-200 cursor-pointer"
         >
-          <GrCertificate className="mr-2 text-[#05DB45]" /> Certificados
+          <GrCertificate className="mr-2 text-[#05DB45]" /> Certificados & Cursos
         </Button>
 
         <Button
@@ -114,20 +141,20 @@ export default function Education() {
               <CardHeader>
                 <CardTitle className="text-[#05DB45] text-xl font-bold">{cert.title}</CardTitle>
                 <CardDescription className="text-gray-300 font-semibold">
-                  {cert.institution} — <span className="text-gray-400 text-sm">{cert.date}</span>
+                  {cert.institution} — <span className="text-gray-400 text-sm font-mono">{cert.date}</span>
                 </CardDescription>
               </CardHeader>
 
               <CardContent>
-                <p className="text-gray-300 text-sm leading-relaxed pb-2">{cert.description}</p>
+               <p className="text-gray-300 text-sm leading-relaxed font-mono mb-5">{cert.description}</p>
                 {cert.link && (
                   <a
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#05DB45] font-semibold hover:underline transition-all duration-200"
+                    className="text-[#05DB45] font-semibold hover:underline transition-all duration-200 "
                   >
-                    Ver Certificação
+                    Ver Certificação ou instituição
                   </a>
                 )}
               </CardContent>
@@ -160,7 +187,17 @@ export default function Education() {
               </CardHeader>
 
               <CardContent>
-                <p className="text-gray-300 text-sm leading-relaxed">{exp.description}</p>
+                <p className="text-gray-300 text-sm leading-relaxed font-mono mb-5">{exp.description}</p>
+                {exp.link && (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#05DB45] font-semibold hover:underline transition-all duration-200 "
+                  >
+                    Ver Empresa
+                  </a>
+                )}
         
               </CardContent>
             </Card>

@@ -2,12 +2,36 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 import { GiCurledTentacle } from "react-icons/gi";
+import Swal from "sweetalert2";
 
 
 
 export const Header = () => {
+
+   const [handleclickSwals, sethandleclickSwal] = useState(false);
+
+   function handleClick() {
+    sethandleclickSwal(!handleclickSwals);
+   
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Desculpe, ainda estamos trabalhando, aguarde um pouco...",
+      showConfirmButton: false,
+      timer: 2500,
+      timerProgressBar: true, 
+      width: 600,
+      background: "#0A0A0A",
+      color: "#9CA3AF",
+      backdrop: "rgba(10, 10, 10, 0.5)",
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    })
+  }
  
     return (
        <div>
@@ -37,14 +61,52 @@ export const Header = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   }}
-  className="font-mono text-gray-400 hover:text-[#05DB45]"
+  className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
 >
   Projetos
 </Link>
-      <a className="font-mono text-gray-400 hover:text-[#05DB45]  focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500 hover:animate-bounce" href="#">Skills</a>
-      <a className="font-mono text-gray-400 hover:text-[#05DB45] focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500 hover:animate-bounce" href="#">Educação</a>
+<Link
+  href="#skills"
+  onClick={(e) => {
+    e.preventDefault(); 
+    const element = document.getElementById("skills");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+>
+Skills
+</Link>
 
-      <a className="font-mono text-gray-400 hover:text-[#05DB45]  focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500 hover:animate-bounce" href="#">Blog</a>
+
+<Link
+  href="#education"
+  onClick={(e) => {
+    e.preventDefault(); 
+    const element = document.getElementById("education");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+>
+Educação
+</Link>
+
+<Link
+onClick={(e) =>{
+  e.preventDefault();
+  handleClick();
+}}
+
+href={"#about"}
+
+
+  className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+>
+Sobre
+</Link>
     </div>
   </nav>
 </header>
