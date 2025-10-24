@@ -2,10 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import {  useState } from "react";
-import {  FaLongArrowAltDown } from "react-icons/fa";
+import {  FaJava, FaLongArrowAltDown } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
 import { FaCss3, FaFlutter, FaReact } from "react-icons/fa6";
-import { SiBootstrap, SiDbeaver, SiDocker, SiFirebase, SiGit, SiGithub, SiHtml5, SiInsomnia,  SiLaravel, SiMariadb, SiMysql, SiNextdotjs, SiNotion, SiPostgresql, SiRender, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
+import { SiBootstrap, SiDbeaver, SiDocker, SiFirebase, SiGit, SiGithub, SiGoland, SiHtml5, SiInsomnia,  SiLaravel, SiMariadb, SiMysql, SiNextdotjs, SiNotion, SiPostgresql, SiRender, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 export default function Skills() {
   const [clickSkillsWeb, setClickSkillsWeb] = useState(false);
   const [clickSkillsDataBase, setClickSkillsDataBase] = useState(false);
@@ -52,6 +52,7 @@ export default function Skills() {
                          { icon: <FaJsSquare />, name: "Javascript" },
                               { icon: <SiBootstrap />, name: "Bootstrap" },
                                { icon: <SiTypescript />, name: "Typescript" },
+                               { icon: <FaJava />, name: "Java" },
       ],
     },
   ];
@@ -86,6 +87,7 @@ export default function Skills() {
         { icon: <SiGit />, name: "Git"},
         { icon: <SiGithub />, name: "Github"},
         { icon: <SiNotion />, name: "Notion"},
+        { icon: <SiGoland />, name: "golang"},
         
     ]}
   ];

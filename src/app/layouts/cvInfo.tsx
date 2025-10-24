@@ -18,8 +18,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { time } from "console";
-import { changeLanguage } from "i18next";
+
+
 
 
 export const Cvinfo = () => {
@@ -90,12 +90,29 @@ const imagesLanguage = [
     onClick: () => handleChangeLanguage("de"),
   },
 
+  {
+    src: "/italia.png",
+    alt: "Italiano",
+    onClick: () => handleChangeLanguage("it"),
+  },
+  {
+    src: "/japan.jpg",
+    alt: "日本語",
+    onClick: () => handleChangeLanguage("ja"),
+  },
+  {
+    src: "/coreia.jpg",
+    alt: "한국어",
+    onClick: () => handleChangeLanguage("ko"),
+  },
+
+
 
   
 ]
   return (
     <div className="mt-20 flex flex-col lg:flex-row items-center lg:items-start gap-8 p-4 sm:p-6 relative">
-      {/* Lado esquerdo */}
+
       <div className="flex-1 flex flex-col items-center lg:items-start gap-6 lg:ms-40">
         <div className="rounded-lg shadow-lg shadow-black/50 animate-pulse text-center lg:text-left">
           <span className="font-press-start-2p text-[#05DB45] text-3xl sm:text-4xl mb-4 drop-shadow-[0_0_10px_#05DB45]">
@@ -107,7 +124,6 @@ const imagesLanguage = [
           <span className="font-mono text-2xl sm:text-4xl">Desenvolvedor Full-Stack</span>
         </div>
 
-        {/* Botões */}
         <div className="mt-6 sm:mt-3 flex flex-col md:flex-row gap-4 w-full sm:w-auto">
           <Button
             className="w-full sm:w-auto ps-3 rounded-none rounded-br-lg rounded-bl-lg 
@@ -263,35 +279,42 @@ const imagesLanguage = [
 
 
  
-    <Carousel className="w-full max-w-sm">
-      <CarouselContent className="-ml-1">
-        {imagesLanguage.map((pais, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card className="h-full relative overflow-hidden cursor-pointer" onClick={pais.onClick}>
-                {/* 🔹 Imagem do slide */}
-                <div className="relative w-full aspect-square">
-                  <Image
-                    src={pais.src || "nenhuma imagem De país informada"}
-                    alt={`Slide ${index + 1}`}
-                    fill
-                    className="object-cover rounded-lg"
-                  />
-                </div>
-
-                {/* 🔹 Conteúdo opcional sobre a imagem */}
-                <CardContent className="absolute bottom-0 left-0 w-full bg-black/40 text-white text-center p-2">
-                  <span className="font-mono text-sm">Imagem {index + 1}</span>
-                </CardContent>
-                  <CarouselPrevious />
-      <CarouselNext />
-              </Card>
+  <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+  <CarouselContent className="-ml-1">
+    {imagesLanguage.map((pais, index) => (
+      <CarouselItem key={index} className="pl-1 basis-1/2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+        <div className="p-1">
+          <Card 
+            className="h-full relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#05DB45]/20"
+            onClick={pais.onClick}
+          >
+            {/* 🔹 Imagem do slide */}
+            <div className="relative w-full aspect-square">
+              <Image
+                src={pais.src || "/placeholder-image.jpg"}
+                alt={pais.alt || `Bandeira ${index + 1}`}
+                fill
+                className="object-cover rounded-lg"
+                sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+              />
             </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
+
+            {/* 🔹 Nome do país sobre a imagem */}
+            <CardContent className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent text-white text-center p-2">
+              <span className="font-mono text-xs sm:text-sm">{pais.alt}</span>
+            </CardContent>
+          </Card>
+        </div>
+      </CarouselItem>
+    ))}
+  </CarouselContent>
   
+  {/* Controles de navegação */}
+  <div className="flex justify-center gap-4 mt-10">
+    <CarouselPrevious className=" static transform-none mt-0 bg-[#05DB45] text-black hover:bg-[#05DB45]/80 border-none cursor-pointer" />
+    <CarouselNext className="static transform-none mt-0 bg-[#05DB45] text-black hover:bg-[#05DB45]/80 border-none cursor-pointer" />
+  </div>
+</Carousel>
 
 
               <button
