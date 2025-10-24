@@ -10,6 +10,7 @@ import Skills from "./routes/skills/page";
 
 import Projects from "./routes/projects/page";
 import Education from "./routes/education/page";
+import Services from "./routes/services/page";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
 <Cvinfo />
 <BackgroundAnimate />
 <Skills />
+<Services />
   <Projects />
   <Education/>
 <Footer />

@@ -115,7 +115,7 @@ export default function Projects() {
          
              
               <CardContent className="p-4 md:p-6">
-                <h3 className="font-press-start-2p text-[#05DB45] text-lg sm:text-xl md:text-2xl drop-shadow-[0_0_10px_#05DB45] mb-3 md:mb-4">
+                <h3 className="text-[#05DB45] text-xl font-bold sm:text-xl md:text-2xl drop-shadow-[0_0_10px_#05DB45] mb-3 md:mb-4">
                   {project.title}
                 </h3>
                 <p className="text-gray-300  font-mono text-sm md:text-base">
