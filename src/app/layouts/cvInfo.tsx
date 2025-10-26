@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 import { FaGithub, FaLinkedin, FaSun } from "react-icons/fa";
-import { TfiEmail } from "react-icons/tfi";
+import { TfiEmail, TfiYoutube } from "react-icons/tfi";
 import { FaRegFlag } from "react-icons/fa6";
 import Swal from "sweetalert2";
 
@@ -95,16 +95,7 @@ const imagesLanguage = [
     alt: "Italiano",
     onClick: () => handleChangeLanguage("it"),
   },
-  {
-    src: "/japan.jpg",
-    alt: "日本語",
-    onClick: () => handleChangeLanguage("ja"),
-  },
-  {
-    src: "/coreia.jpg",
-    alt: "한국어",
-    onClick: () => handleChangeLanguage("ko"),
-  },
+ 
 
 
 
@@ -186,16 +177,16 @@ const imagesLanguage = [
                             rounded-none rounded-br-lg rounded-bl-lg shadow-[4px_4px_0_#000]
                             hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
                             transition-all duration-150 cursor-pointer">
-              <FaLinkedin size={40} className="text-white" />
+              <FaLinkedin size={40} className="text-white"  />
             </div>
           </a>
 
-          <a href="mailto:silasgabrielx10@gmail.com?subject=Contato%20do%20Portfólio">
+          <a href="https://www.youtube.com/@dev.SilasSimoes/playlists" target="_blank">
             <div className="w-20 aspect-square bg-[#333333] flex items-center justify-center
                             rounded-none rounded-br-lg rounded-bl-lg shadow-[4px_4px_0_#000]
                             hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
-                            transition-all duration-150 cursor-pointer">
-              <TfiEmail size={40} className="text-white" />
+                            transition-all duration-150 cursor-pointer" rel="noopener noreferrer" >
+              <TfiYoutube size={40} className="text-white" />
             </div>
           </a>
 

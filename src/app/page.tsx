@@ -11,20 +11,26 @@ import Skills from "./routes/skills/page";
 import Projects from "./routes/projects/page";
 import Education from "./routes/education/page";
 import Services from "./routes/services/page";
+import ContatoPage from "./routes/contato/page";
 
 
 
 
 export default function Home() {
   return (
-   <div>
+   <div className="relative">
     <Header/>
 <Cvinfo />
 <BackgroundAnimate />
 <Skills />
+<BackgroundAnimate />
 <Services />
+<BackgroundAnimate />
   <Projects />
   <Education/>
+  <BackgroundAnimate />
+    <BackgroundAnimate />
+  <ContatoPage />
 <Footer />
    </div>
   );

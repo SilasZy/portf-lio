@@ -80,15 +80,15 @@ html {
 .rain {
   position: absolute;
   top: 0;
-  width: 3px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background: rgba(5, 219, 69, 0.5); 
   animation: fall linear infinite;
   border-radius: 5px;
 
 }
 
-/* variações de velocidade e posição */
+
 .rain1 {
   left: 40%;
   animation-duration: 2s;
@@ -126,7 +126,11 @@ html {
   animation-duration: 2s;
   animation-delay: 0.1s;
 }
-
+.rain7 {
+  left: 90%;
+  animation-duration: 2s;
+  animation-delay: 0.1s;
+}
 
 
 .goog-te-banner-frame.skiptranslate {
@@ -160,16 +164,15 @@ html > body > .skiptranslate {
   0% {
     left: 0;
     top: 0;
+    
     opacity: 1;
   }
   50% {
-    top: auto;
-    bottom: auto;
-    top: 100vh;
+   
     opacity: 0.5;
   }
   100% {
-    top: 50vh;
+    top: 19vh;
     opacity: 0;
   }
 

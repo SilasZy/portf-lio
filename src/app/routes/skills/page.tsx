@@ -1,5 +1,6 @@
 "use client";
 
+import BackgroundAnimate from "@/app/layouts/animated/backgroundAnimate";
 import { Button } from "@/components/ui/button";
 import {  useState } from "react";
 import {  FaJava, FaLongArrowAltDown } from "react-icons/fa";
@@ -94,6 +95,7 @@ export default function Skills() {
 
   return (
     <div id="skills" className="min-h-[50vh] flex items-center justify-center pt-20 flex-col text-center">
+    
       <div className="flex flex-row items-center">
         <h2 className="font-press-start-2p text-[#05DB45] text-2xl sm:text-3xl md:text-4xl mb-4 drop-shadow-[0_0_10px_#05DB45]">
           Skills
@@ -102,6 +104,7 @@ export default function Skills() {
       </div>
 
       <div className="flex flex-col lg:flex-row mt-10 gap-5">
+      
         <Button
           className="font-mono text-gray-400 bg-transparent cursor-pointer  focus:outline-hidden"
           onClick={handleclickWeb}

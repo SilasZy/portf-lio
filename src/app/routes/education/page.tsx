@@ -9,6 +9,7 @@ import { GrCertificate } from "react-icons/gr";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { link } from "fs";
+import BackgroundAnimate from "@/app/layouts/animated/backgroundAnimate";
 
 export default function Education() {
   const [showCertificates, setShowCertificates] = useState(false);
@@ -98,6 +99,7 @@ export default function Education() {
 
   return (
     <div id="education" className="min-h-[100vh] flex flex-col items-center justify-center text-center pt-20">
+        
       <div className="flex flex-row items-center">
         <h2 className="font-press-start-2p text-[#05DB45] text-2xl sm:text-3xl md:text-4xl mb-4 drop-shadow-[0_0_10px_#05DB45]">
           Educação
@@ -204,6 +206,7 @@ export default function Education() {
           ))}
         </div>
       )}
+     
     </div>
   );
 }

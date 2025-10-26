@@ -72,7 +72,7 @@ export default function Services() {
                 
 
 
-                       <div data-aos="zoom-in-down" data-aos-duration="2000"  data-aos-easing="ease-out-cubic" className="  mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl">
+                       <div data-aos="zoom-in-down" data-aos-duration="2000"  data-aos-easing="ease-out-cubic" className="  mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl cursor-pointer">
           {Services.map((Services, index) => (
             <Card
               key={index}

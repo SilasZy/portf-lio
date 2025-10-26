@@ -6,8 +6,8 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import  BackgroundAnimate  from "@/app/layouts/animated/backgroundAnimate";
-import { FaCss3, FaHtml5, FaJs, FaLaptop, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiSass, SiTailwindcss, SiVite } from "react-icons/si";
+import { FaCss3, FaHtml5, FaJs, FaLaptop, FaLaravel, FaReact } from "react-icons/fa";
+import { SiApache, SiDocker, SiLivewire, SiMysql, SiNextdotjs, SiPostgresql, SiSass, SiTailwindcss, SiVite } from "react-icons/si";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
 
@@ -35,7 +35,7 @@ export default function Projects() {
       description:
         "Aplicação web consumida pelo viacep, buscando pelo cep o endereço completo, bairro, cidade e estado e muito mais!",
       image: "/buscarcep.png",
-      techs: [  <FaReact key="react" />, <SiNextdotjs key="next" />, <SiSass key="sass" />, ],
+      techs: [    <SiNextdotjs key="next" />, <SiTailwindcss key="tailwind" />, ],
       aos: "fade-right",
       demo:"https://busca-cepnext.vercel.app/ ",
       git: "https://github.com/SilasZy/BuscaCep-"
@@ -69,12 +69,40 @@ export default function Projects() {
     aos: "fade-left",
     demo:"https://check-shop.vercel.app/# ",
     git: "https://github.com/SilasZy/checkShop"
-  }
-  ];
+  },
+
+    {
+      title: "InOut",
+    description:
+      "Aplicação web Fullstack de controle de entrada e saída de Pessoas em um Estabelecimento ou Hotel, o usuário pode adicionar visitante e motivo da visita e um controle de funcionários que acessam o sistema. ",
+    image: "/Pinout.png",
+    techs: [  <FaLaravel key="Laravel" />, <SiTailwindcss key="Tailwind" />, <SiLivewire key="Livewire" />, <SiMysql key="Mysql" />, ],
+    aos: "fade-right",
+    demo:"https://www.youtube.com/watch?v=DSe_Jn4DHsQ",
+    git: "https://github.com/SilasZy/InOut-control-visit"
+  },
+  
+
+   {
+      title: "Vota-Brasil",
+  description: "Desafio técnico desenvolvido para a vaga de PHP Laravel Júnior na Retta TI. Aplicação web fullstack construída com Laravel (PHP) no backend e Next.js no frontend, utilizando Docker para containerização e Apache como servidor HTTP. Implementa consumo da API da Câmara dos Deputados, permitindo listagem, pesquisa e filtragem de parlamentares, além da visualização de despesas mensais detalhadas. O projeto foi implantado em ambiente de produção com deploy do backend no Render e frontend hospedado na Vercel, mais Banco na vercel, garantindo escalabilidade e integração contínua."
+  ,
+    image: "/vota.png",
+    techs: [  <FaLaravel key="Laravel" />, <SiTailwindcss key="Tailwind" />, <SiNextdotjs key="Next" />, <SiPostgresql key="Postgresql" />, <SiDocker key="Docker" />, <SiApache key="Apache" />, ],
+    aos: "fade-left",
+    demo:"https://www.youtube.com/watch?v=yDmT49a0E4o",
+    git: "https://github.com/SilasZy/Vota_Brasil"
+  },
+
+
+];
 
   return (
     <div id="projects" className="min-h-screen text-white relative overflow-hidden ">
       <BackgroundAnimate />
+        <BackgroundAnimate />
+          <BackgroundAnimate />
+            <BackgroundAnimate />
 
       {/* Título principal */}
       <div className="h-50 flex items-center justify-center pt-20">

@@ -159,6 +159,20 @@ export const Header = () => {
             >
               Serviços
             </Link>
+
+                 <Link
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("contact");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+            >
+         Contato
+            </Link>
           </div>
         </nav>
 
@@ -243,6 +257,21 @@ export const Header = () => {
               className="font-mono text-gray-400 hover:text-[#05DB45] transition-colors duration-300 text-xl"
             >
               Serviços
+            </Link>
+
+            <Link
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("contact");
+                if (element) {
+                  element.scrollIntoView({ behavior: "instant" });
+                }
+                setToggleMenu(false);
+              }}
+              className="font-mono text-gray-400 hover:text-[#05DB45] transition-colors duration-300 text-xl"
+            >
+              Contato
             </Link>
           </div>
         )}
