@@ -83,14 +83,14 @@ export const Header = () => {
             )}
 
             <a
-              className="font-press-start-2p text-[#05DB45] text-sm sm:text-sm mb-4 drop-shadow-[0_0_10px_#05DB45] hidden sm:block"
+              className="font-press-start-2p text-[#05DB45] text-sm sm:text-sm mb-4 drop-shadow-[0_0_10px_#05DB45] hidden sm:block hover:animate-bounce"
               href="#"
               aria-label="Brand"
             >
               R&apos;lyeh
             </a>
 
-            <GiCurledTentacle className="hidden sm:block text-2xl text-[#05DB45] focus:outline-hidden focus:opacity-80 dark:text-white" aria-hidden="true" />
+            <GiCurledTentacle className="hidden sm:block text-2xl text-[#05DB45] focus:outline-hidden focus:opacity-80 dark:text-white hover:animate-bounce" aria-hidden="true" />
           </div>
 
           <div className="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
@@ -103,7 +103,7 @@ export const Header = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block hover:animate-bounce"
             >
               Projetos
             </Link>
@@ -116,7 +116,7 @@ export const Header = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block hover:animate-bounce"
             >
               Habilidades
             </Link>
@@ -130,7 +130,7 @@ export const Header = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block hover:animate-bounce"
             >
               Educação
             </Link>
@@ -141,7 +141,7 @@ export const Header = () => {
                 handleClick();
               }}
               href={"#about"}
-              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block hover:animate-bounce"
             >
               Blog
             </Link>
@@ -155,7 +155,7 @@ export const Header = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block hover:animate-bounce"
             >
               Serviços
             </Link>
@@ -169,7 +169,7 @@ export const Header = () => {
                   element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block"
+              className="font-mono text-gray-400 hover:text-[#05DB45] hidden sm:block hover:animate-bounce"
             >
          Contato
             </Link>
