@@ -78,7 +78,7 @@ export default function Projects() {
     image: "/Pinout.png",
     techs: [  <FaLaravel key="Laravel" />, <SiTailwindcss key="Tailwind" />, <SiLivewire key="Livewire" />, <SiMysql key="Mysql" />, ],
     aos: "fade-right",
-    demo:"https://www.linkedin.com/posts/silas-gabriel-7316bb30b_ol%C3%A1-rede-desenvolvi-uma-aplica%C3%A7%C3%A3o-chamada-activity-7322691548595302400-BPvH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE7ywVUBhk2r6ZJuIyonHefo7Dx8s8JaPYw",
+    demo:"https://www.linkedin.com/posts/silas-gabriel-7316bb30b_ol%C3%A1-rede-como-anda-o-feriado-de-voc%C3%AAs-por-activity-7320197216583798785-n7GT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE7ywVUBhk2r6ZJuIyonHefo7Dx8s8JaPYw",
     git: "https://github.com/SilasZy/InOut-control-visit"
   },
   
