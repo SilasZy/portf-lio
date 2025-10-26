@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import { GiCurledTentacle } from "react-icons/gi";
@@ -58,7 +59,9 @@ export const Header = () => {
   return (
     <div>
       <header className="mt-5 w-full bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] flex flex-wrap sm:flex-nowrap sm:justify-between">
+      
         <nav className="fixed max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
+
           <div className="flex flex-row items-center gap-2">
             <Button
               onClick={() => setToggleMenu(!toggleMenu)}
