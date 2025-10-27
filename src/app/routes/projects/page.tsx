@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import  BackgroundAnimate  from "@/app/layouts/animated/backgroundAnimate";
 import { FaCss3, FaHtml5, FaJs, FaLaptop, FaLaravel, FaReact } from "react-icons/fa";
-import { SiApache, SiDocker, SiLivewire, SiMysql, SiNextdotjs, SiPostgresql, SiSass, SiTailwindcss, SiVite } from "react-icons/si";
+import { SiApache, SiDocker, SiFlutter, SiLivewire, SiMysql, SiNextdotjs, SiPostgresql, SiSass, SiTailwindcss, SiVite } from "react-icons/si";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
 
@@ -94,6 +94,18 @@ export default function Projects() {
     git: "https://github.com/SilasZy/Vota_Brasil"
   },
 
+
+  
+   {
+      title: "Control-G",
+  description: "Aplicativo Mobile Desenvolvido em Flutter para controle de Gastos Pessoais,  o Usuário pode cadastrar uma empresa e visualizar todos os gastos cadastrados. O aplicativo apresenta uma interface amigável e intuitiva, facilitando o gerenciamento financeiro pessoal. Ideal para quem deseja manter suas finanças organizadas e acompanhar seus gastos de forma fácil, seja em relação à produtos, comida, materiais e etc."
+  ,
+    image: "/flutter.png",
+    techs: [ <SiFlutter key="Flutter"/> ],
+    aos: "fade-right",
+    demo:"https://www.youtube.com/watch?v=oD0XtYqi2Hw&t=40s",
+    git: "https://github.com/SilasZy/Control-G.git"
+  },
 
 ];
 
