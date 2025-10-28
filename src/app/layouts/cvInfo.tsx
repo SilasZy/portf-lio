@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-import { FaGithub, FaLinkedin, FaSun } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaSun } from "react-icons/fa";
 import { TfiEmail, TfiYoutube } from "react-icons/tfi";
 import { FaRegFlag } from "react-icons/fa6";
 import Swal from "sweetalert2";
@@ -187,6 +187,15 @@ const imagesLanguage = [
                             hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
                             transition-all duration-150 cursor-pointer" rel="noopener noreferrer" >
               <TfiYoutube size={40} className="text-white" />
+            </div>
+          </a>
+
+             <a href="https://www.instagram.com/dev.silassimoes/?igsh=c2E4aXhsYmp5ZHhh#" target="_blank">
+            <div className="w-20 aspect-square bg-[#333333] flex items-center justify-center
+                            rounded-none rounded-br-lg rounded-bl-lg shadow-[4px_4px_0_#000]
+                            hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
+                            transition-all duration-150 cursor-pointer" rel="noopener noreferrer" >
+              <FaInstagram size={40} className="text-white" />
             </div>
           </a>
 
