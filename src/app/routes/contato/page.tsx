@@ -96,6 +96,7 @@ export default function ContatoPage() {
               <input
                 type="text"
                 name="name"
+                placeholder="Digite seu nome"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -106,8 +107,11 @@ export default function ContatoPage() {
             <div>
               <label className="block text-gray-300 font-mono text-sm mb-2">Email</label>
               <input
+              
                 type="email"
                 name="email"
+                placeholder="youremail@example.com"
+
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -120,6 +124,7 @@ export default function ContatoPage() {
               <textarea
                 name="message"
                 value={formData.message}
+                placeholder="digite uma mensagem..."
                 onChange={handleChange}
                 required
                 rows={5}

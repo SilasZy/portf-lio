@@ -18,20 +18,13 @@ import ContatoPage from "./routes/contato/page";
 
 export default function Home() {
   return (
-   <div className="relative">
-    <Header/>
-<Cvinfo />
-<BackgroundAnimate />
-<Skills />
-<BackgroundAnimate />
-<Services />
-<BackgroundAnimate />
-  <Projects />
-  <Education/>
-  <BackgroundAnimate />
-    <BackgroundAnimate />
-  <ContatoPage />
-<Footer />
-   </div>
+    
+  
+   
+    <>
+    
+    <Header /><Cvinfo /><BackgroundAnimate /><Skills /><BackgroundAnimate /><Services /><BackgroundAnimate /><Projects /><Education /><BackgroundAnimate /><BackgroundAnimate /><ContatoPage /><Footer /></>
+   
+  
   );
 }
