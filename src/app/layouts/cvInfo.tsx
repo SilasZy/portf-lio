@@ -147,7 +147,7 @@ const imagesLanguage = [
             asChild
           >
             <a
-              href="/CV Silas G simoes.pdf"
+              href="/CV Silas Simoes.pdf"
               rel="noopener noreferrer"
               className="font-press-start-2p"
               download
